@@ -6,7 +6,8 @@ All credit goes to [zamundaaa/VK_hdr_layer](https://github.com/Zamundaaa/VK_hdr_
 
 I really struggled finding some reliable sources on how to import the flake, this is what I found works:
 
-```flake.nix
+### flake.nix
+```nix
 {
   inputs = { # v Add this input
     hdrvulkan.url = "github:TheTallestJJ/vulkan-hdr-layer-flake/8a003118967530c6da2eba76aa1d89a7161cf9f3";
@@ -27,7 +28,8 @@ I really struggled finding some reliable sources on how to import the flake, thi
 }
 ```
 
-```configuration.nix
+### configuration.nix
+```nix
 { config, pkgs, inputs, ... }: # <-- add inputs at the top of file
 
 {
