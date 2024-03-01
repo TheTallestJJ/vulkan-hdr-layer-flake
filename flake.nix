@@ -13,7 +13,7 @@
         pname = "vulkan-hdr-layer";
         version = "63d2eec";
       
-        src = (nixpkgs.fetchFromGitHub {
+        src = (pkgs.fetchFromGitHub {
           owner = "Drakulix";
           repo = "VK_hdr_layer";
           rev = "63d2eeccb962824c90e158a06900ae1abec9c49e";
