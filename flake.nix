@@ -4,7 +4,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
   outputs = { self, nixpkgs }: {
-    packages.default = self.packages.x86_64-linux.vk-hdr-layer;
+    packages.x86_64-linux.default = self.packages.x86_64-linux.vk-hdr-layer;
     packages.x86_64-linux.vk-hdr-layer =
       let pkgs = import nixpkgs {
           system = "x86_64-linux";
