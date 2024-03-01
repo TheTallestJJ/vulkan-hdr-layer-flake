@@ -27,7 +27,7 @@
       
         nativeBuildInputs = with pkgs; [ vulkan-headers meson ninja pkg-config jq ];
       
-        buildInputs = with pkgs; [ vulkan-headers vulkan-loader vulkan-utility-libraries xorg.libX11 libXrandr libxcb wayland ];
+        buildInputs = with pkgs; [ vulkan-headers vulkan-loader vulkan-utility-libraries xorg.libX11 xorg.libXrandr xorg.libxcb wayland ];
       
         # Help vulkan-loader find the validation layers
         setupHook = pkgs.writeText "setup-hook" ''
